@@ -1,0 +1,99 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/assets/svg/header.svg");
+  }
+
+  .photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+    p {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0.5rem 0;
+      font-size: 1.125rem;
+
+      &::before {
+        content: "";
+        width: 1rem;
+        height: 1rem;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 0.5rem;
+      }
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .job::before {
+      background-image: url("/assets/svg/person.svg");
+    }
+    .locatiom::before {
+      background-image: url("/assets/svg/local.svg");
+    }
+    .phone::before {
+      background-image: url("/assets/svg/whatsapp.svg");
+    }
+    .email::before {
+      background-image: url("/assets/svg/mail.svg");
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-areas:
+      "photo title"
+      "photo information";
+
+    .photo {
+      grid-area: photo;
+      margin: 0 auto;
+    }
+    .title {
+      grid-area: title;
+      text-align: start;
+      max-width: 250px;
+    }
+    .information {
+      grid-area: information;
+    }
+  }
+}
