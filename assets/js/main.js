@@ -27,7 +27,7 @@ function updateProfile(profileData) {
 }
 
 function updateSoftSkills(profileData){
-    const softSkills = document.getElementById(profileData.skills.softSkills)
+    const softSkills = document.getElementById('.softSkills')
 
     softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li>${skill}</li>`).join('')
 }
@@ -36,6 +36,6 @@ function updateSoftSkills(profileData){
 
 (async () => {
     const profileData = await fetchProfileData()
-    updateProfileInfo(profileData)
+    updateProfile(profileData)
     updateSoftSkills(profileData)
 })()
