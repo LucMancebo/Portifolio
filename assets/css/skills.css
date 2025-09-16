@@ -15,8 +15,10 @@
 
       li {
         img {
-          max-width: 50px;
+          max-width: 60px;
+          max-height: 70px;
           margin: 0 0.5rem;
+          text-align: center;
         }
       }
     }
