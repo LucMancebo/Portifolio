@@ -39,7 +39,7 @@ function updateHardSkills(profileData) {
 
 function updateLaguages(profileData) {
     const langueges = document.getElementById('languages')
-    languages.innerHTML = profileData.languages.map(langueges => `<li>${langueges}</li>`).join('')
+    languages.innerHTML = profileData.languages.map(languages => `<li>${languages}</li>`).join('')
 }
 
 
