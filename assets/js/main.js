@@ -61,14 +61,12 @@ function updateProfessionalExperience(profileData) {
 
         <li>
             <h3 class="title">${experience.name}</h3>
-            <span class="period">${experience.period}/span>
+            <span class="period">${experience.period}</span>
             <p>
             ${experience.description}
             </p>
         </li>
         `
-
-
     }).join('')
 }
 
@@ -81,4 +79,5 @@ function updateProfessionalExperience(profileData) {
     updateHardSkills(profileData)
     updateLaguages(profileData)
     updatePortfolio(profileData)
+    updateProfessionalExperience(profileData)
 })()
