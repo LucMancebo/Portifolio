@@ -42,17 +42,14 @@ function updateLaguages(profileData) {
     languages.innerHTML = profileData.languages.map(languages => `<li>${languages}</li>`).join('')
 }
 
-function updatePortifolio(profileData) {
+function updatePortfolio(profileData) {
     const portfolio = document.getElementById('portfolio')
-    portfolio.innerHTML = profileData.portfolio.map(project => {
+    portfolio.innerHTML = profileData.portfolio.map(portfolio => {
         return `
         <li>
-            <h3 ${project.github ? 'class"github"' : ''}>${project.name}</h3>
-            <a href="${project.url}" target="_blank">${project.url}</a>
-        </li>
-
-
-        `
+            <h3 ${portfolio.github ? 'class"github"' : ''}>${portfolio.name}</h3>
+            <a href="${portfolio.url}" target="_blank">${portfolio.url}</a>
+        </li>`
 
     }).join('')
 }
@@ -65,5 +62,5 @@ function updatePortifolio(profileData) {
     updateSoftSkills(profileData)
     updateHardSkills(profileData)
     updateLaguages(profileData)
-    updatePortifolio(profileData)
+    updatePortfolio(profileData)
 })()
