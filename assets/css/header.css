@@ -14,7 +14,7 @@
     height: 2rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("/assets/svg/header.svg");
+    background-image: url("assets//svg/header.svg");
   }
 
   .photo {
@@ -62,16 +62,16 @@
     }
 
     .job::before {
-      background-image: url("/assets/svg/person.svg");
+      background-image: url("assets//svg/person.svg");
     }
     .locatiom::before {
-      background-image: url("/assets/svg/local.svg");
+      background-image: url("assets//svg/local.svg");
     }
     .phone::before {
-      background-image: url("/assets/svg/whatsapp.svg");
+      background-image: url("assets//svg/whatsapp.svg");
     }
     .email::before {
-      background-image: url("/assets/svg/mail.svg");
+      background-image: url("assets//svg/mail.svg");
     }
   }
 }
