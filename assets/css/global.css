@@ -22,7 +22,7 @@ main {
   &::before,
   &::after {
     content: "";
-    background-image: url("assets//svg/background.svg");
+    background-image: url("/assets//svg/background.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 70vw;
